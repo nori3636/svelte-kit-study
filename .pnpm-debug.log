@@ -1,0 +1,23 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 info pnpm": {
+    "err": {
+      "name": "Error",
+      "message": "not found: onstall",
+      "code": "ENOENT",
+      "stack": "Error: not found: onstall\n    at getNotFoundError (/home/norik/.volta/tools/image/packages/pnpm/lib/node_modules/pnpm/dist/pnpm.cjs:41702:51)\n    at Function.whichSync [as sync] (/home/norik/.volta/tools/image/packages/pnpm/lib/node_modules/pnpm/dist/pnpm.cjs:41779:13)\n    at getCommandAbsolutePathSync (/home/norik/.volta/tools/image/packages/pnpm/lib/node_modules/pnpm/dist/pnpm.cjs:43344:44)\n    at default_1 (/home/norik/.volta/tools/image/packages/pnpm/lib/node_modules/pnpm/dist/pnpm.cjs:43353:32)\n    at /home/norik/.volta/tools/image/packages/pnpm/lib/node_modules/pnpm/dist/pnpm.cjs:178391:39"
+    }
+  },
+  "2 error pnpm": {
+    "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+    "prefix": "/home/norik/workspace/svelte-kit-study/my-app",
+    "err": {
+      "name": "pnpm",
+      "message": "not found: onstall",
+      "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+      "stack": "Error: not found: onstall\n    at getNotFoundError (/home/norik/.volta/tools/image/packages/pnpm/lib/node_modules/pnpm/dist/pnpm.cjs:41702:51)\n    at Function.whichSync [as sync] (/home/norik/.volta/tools/image/packages/pnpm/lib/node_modules/pnpm/dist/pnpm.cjs:41779:13)\n    at getCommandAbsolutePathSync (/home/norik/.volta/tools/image/packages/pnpm/lib/node_modules/pnpm/dist/pnpm.cjs:43344:44)\n    at default_1 (/home/norik/.volta/tools/image/packages/pnpm/lib/node_modules/pnpm/dist/pnpm.cjs:43353:32)\n    at /home/norik/.volta/tools/image/packages/pnpm/lib/node_modules/pnpm/dist/pnpm.cjs:178391:39"
+    }
+  }
+}
