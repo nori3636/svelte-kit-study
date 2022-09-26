@@ -35,7 +35,6 @@
 		<input name="text" aria-label="Add todo" placeholder="+ tap to add a todo" />
 	</form>
 	
-		<div>{user?.toString()}</div>
 	
 	{#each todos as todo (todo.uid)}
 		<div

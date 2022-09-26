@@ -18,8 +18,7 @@ export const load: PageServerLoad = async ({ locals }) => {
 		// user hasn't created a todo list.
 		// start with an empty array
 		return {
-			todos: [] as Todo[],
-			userid: `${locals.userid}`
+			todos: [] as Todo[]
 		};
 	}
 
