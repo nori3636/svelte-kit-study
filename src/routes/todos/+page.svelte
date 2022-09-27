@@ -5,10 +5,19 @@
 	import { flip } from 'svelte/animate';
 	import type { PageData } from './$types';
 	import { each } from 'svelte/internal';
+	import { browser } from '$app/environment';
 
 	export let data: PageData;
 	$: todos = data.todos;
-	$: user = data.userid;
+	$: user = data.user;
+
+	let session = '';
+	if(browser){
+		const test = sessionStorage.getItem("key");
+		if(test){
+			session = test;
+		}
+	}
 </script>
 
 <svelte:head>
@@ -18,6 +27,8 @@
 
 <div class="todos">
 	<h1>Todos</h1>
+user{user}
+session{session}
 
 	<form
 		class="new"

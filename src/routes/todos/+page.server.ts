@@ -17,9 +17,14 @@ export const load: PageServerLoad = async ({ locals }) => {
 	if (response.status === 404) {
 		// user hasn't created a todo list.
 		// start with an empty array
-		return {
+		const result = {
 			todos: [] as Todo[]
 		};
+
+		console.log("result",result)
+
+
+		return result
 	}
 
 	if (response.status === 200) {
